@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.mysql.cj.x.protobuf.MysqlxCrud.Order;
 
 
 @SpringBootApplication
@@ -33,6 +32,9 @@ public class DemoApplication {
 
 		// PaymentService pay = context.getBean(PaymentService.class);
 		// pay.pay();
+
+		User user = context.getBean(User.class);
+		System.out.println(user.getName());
 		
 	}
 
